@@ -21,6 +21,7 @@ Useful links
 * BitcoinTalk/RU: https://bitcointalk.org/index.php?topic=3019189
 * BitcoinTalk/EN: https://bitcointalk.org/index.php?topic=3019643
 * BitcoinTalk/DE: https://bitcointalk.org/index.php?topic=3019862
+* BitcoinTalk/ES: https://bitcointalk.org/index.php?topic=3019743
 * Twitter https://twitter.com/cryply
 
 
