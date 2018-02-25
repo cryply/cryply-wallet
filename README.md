@@ -2,18 +2,14 @@ DOWNLOAD
 ========
 
 * CRYPLY [CRP] Source code on github https://github.com/cryply/cryply-wallet
-
-* CRYPLY [CRP] Download binary (Win64, Win32, Ubuntu64, Mac10.13) https://github.com
-
-* CRYPLY [CRP] QT Wallet Mac OS X https://github.com
-
+* CRYPLY [CRP] Download Releases https://github.com
 * Algo YeScrypt https://password-hashing.net/wiki/doku.php/yescrypt
 
 
 Useful links
 ============
 
-* Mining Pool http://pool.cryply.io комиссия 0%.
+* Mining Pool http://pool.cryply.io tax 0%.
 * Exchanges http://cryply.exchange/
 * BlockExplorer http://explorer.cryply.io/
 * Faucet http://faucet.cryply.io/
