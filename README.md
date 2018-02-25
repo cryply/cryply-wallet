@@ -36,7 +36,7 @@ License
 Cryply Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
-Build cryplyd on Ubuntu 16.04
+How to build on Ubuntu 16.04
 -------------------
 
     sudo apt-get install build-essential
