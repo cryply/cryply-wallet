@@ -9,7 +9,7 @@ DOWNLOAD
 Useful links
 ============
 
-* Mining Pool http://pool.cryply.io tax 0%.
+* Mining Pool http://pool.cryply.io fee 0%.
 * Exchanges http://cryply.exchange/
 * BlockExplorer http://explorer.cryply.io/
 * Faucet http://faucet.cryply.io/
