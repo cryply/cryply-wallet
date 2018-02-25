@@ -18,7 +18,7 @@ Useful links
 
 * RoadMap:(coming soon)
 * Website: (coming soon)
-* BitcoinTalk: https://bitcointalk.org/index.php?topic=3019189
+* BitcoinTalk: https://bitcointalk.org/index.php?topic=3019643
 * Twitter https://twitter.com/cryply
 
 
