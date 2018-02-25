@@ -2,7 +2,7 @@ DOWNLOAD
 ========
 
 * CRYPLY [CRP] Source code on github https://github.com/cryply/cryply-wallet
-* CRYPLY [CRP] Download Releases https://github.com
+* CRYPLY [CRP] Download Releases https://github.com/cryply/cryply-wallet/releases/
 * Algo YeScrypt https://password-hashing.net/wiki/doku.php/yescrypt
 
 
