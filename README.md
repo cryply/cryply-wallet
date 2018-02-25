@@ -37,4 +37,4 @@ Cryply Core is released under the terms of the MIT license. See [COPYING](COPYIN
 information or see http://opensource.org/licenses/MIT.
 
 
-are held, and adds warning to the debug.log file if inconsistencies are detected.
+
