@@ -35,8 +35,8 @@ Cryply Core integration/staging tree
 
 
 
-- How to build console wallet on Ubuntu 16.04
---------------------
+How to build console wallet on Ubuntu 16.04
+===========================================
  
     sudo apt-get install build-essential
     sudo apt-get install libtool autotools-dev autoconf
