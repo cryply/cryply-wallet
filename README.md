@@ -16,8 +16,8 @@ Useful links
 * FileSharing Service https://cryply.download/
 * Cloud Mining https://cryplyhash.com/
 
-* RoadMap:(coming soon)
-* Website: (coming soon)
+* RoadMap: http://cryply.io/roadmap/
+* Website: http://cryply.io/
 * BitcoinTalk/RU: https://bitcointalk.org/index.php?topic=3019189
 * BitcoinTalk/EN: https://bitcointalk.org/index.php?topic=3019643
 * BitcoinTalk/DE: https://bitcointalk.org/index.php?topic=3019862
