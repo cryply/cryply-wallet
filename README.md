@@ -38,21 +38,49 @@ Cryply Core integration/staging tree
 How to build console wallet on Ubuntu 16.04
 ===========================================
  
-    sudo apt-get install build-essential
-    sudo apt-get install libtool autotools-dev autoconf
-    sudo apt-get install libssl-dev
-    sudo apt-get install libboost-all-dev
-    sudo apt-get install pkg-config
+    sudo apt-get -y install build-essential
+    sudo apt-get -y install libtool autotools-dev autoconf
+    sudo apt-get -y install libssl-dev
+    sudo apt-get -y install libboost-all-dev
+    sudo apt-get -y install pkg-config
     sudo add-apt-repository ppa:bitcoin/bitcoin
     sudo apt-get update
-    sudo apt-get install libdb4.8-dev
-    sudo apt-get install libdb4.8++-dev
+    sudo apt-get -y install libdb4.8-dev
+    sudo apt-get -y install libdb4.8++-dev
 
-    git clone https://github.com/cryply/cryply-wallet.git
+    git clone https://github.com/cryply/cryply-wallet.git cryply
     cd cryply
     ./autogen.sh
     ./configure --enable-upnp-default --without-gui --disable-tests
-    make
+    make && make install
+    
+How to build QT wallet on Ubuntu 16.04
+===========================================
+ 
+    sudo apt-get update
+    sudo apt-get install -y build-essential libtool autotools-dev autoconf  
+    sudo apt-get install -y libssl-dev libboost-all-dev pkg-config
+    sudo apt-get install -y curl git unzip libssl-dev vim wget
+    
+    sudo apt-get install -y libqrencode-dev libprotobuf-dev protobuf-compiler
+    sudo apt-get install -y libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools
+    
+    cd ~
+    wget http://download.oracle.com/berkeley-db/db-4.8.30.zip
+    unzip db-4.8.30.zip
+    cd db-4.8.30/build_unix/
+    ../dist/configure --prefix=/usr/local --enable-cxx
+    make && make install
+
+    cd ~
+    git clone https://github.com/cryply/cryply-wallet.git cryply
+    cd cryply
+    ./autogen.sh
+    ./configure --enable-upnp-default --disable-tests
+    make && make install
+    
+    ls -la src/qt/ |grep cryply
+
 
 Development tips and tricks
 ----------------------------
