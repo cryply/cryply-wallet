@@ -9,20 +9,24 @@ DOWNLOAD
 Useful links
 ============
 
-* Mining Pool http://pool.cryply.io fee 0%.
-* Exchanges http://cryply.exchange/
-* BlockExplorer http://explorer.cryply.io/
-* Faucet http://faucet.cryply.io/
-* FileSharing Service https://cryply.download/
-* Cloud Mining https://cryplyhash.com/
+* Mining Pool:    http://pool.cryply.io fee 0%.
+* Exchanges:      http://cryply.exchange/
+* BlockExplorer:  http://explorer.cryply.io/
+* Faucet:         http://faucet.cryply.io/
+* FileSharing:    https://cryply.download/
+* Cloud Mining:   https://cryplyhash.com/
 
-* RoadMap: http://cryply.io/roadmap/
-* Website: http://cryply.io/
-* BitcoinTalk/RU: https://bitcointalk.org/index.php?topic=3019189
-* BitcoinTalk/EN: https://bitcointalk.org/index.php?topic=3019643
-* BitcoinTalk/DE: https://bitcointalk.org/index.php?topic=3019862
+* RoadMap:        http://cryply.io/roadmap/
+* Website:        http://cryply.io/
+* BitcoinTalk/RU: Comming soon
+* BitcoinTalk/EN: Comming soon
+* BitcoinTalk/DE: Comming soon
 * BitcoinTalk/ES: https://bitcointalk.org/index.php?topic=3019743
-* Twitter https://twitter.com/cryply
+* Twitter:        https://twitter.com/freecryply
+* Telegram/EN:    http://t.me/freecryplyru
+* Telegram/RU:    http://t.me/freecryplyru
+* Telegram/ES:    http://t.me/freecryplyru
+* Telegram/DE:    http://t.me/freecryplyru
 
 
 Cryply Core integration/staging tree
