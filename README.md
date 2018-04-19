@@ -19,7 +19,7 @@ Useful links
 * RoadMap:        http://cryply.io/roadmap/
 * Website:        http://cryply.io/
 * BitcoinTalk/RU: Comming soon
-* BitcoinTalk/EN: Comming soon
+* BitcoinTalk/EN: https://bitcointalk.org/index.php?topic=3352561
 * BitcoinTalk/DE: Comming soon
 * BitcoinTalk/ES: https://bitcointalk.org/index.php?topic=3019743
 * Twitter:        https://twitter.com/freecryply
