@@ -19,14 +19,16 @@ Useful links
 * RoadMap:        http://cryply.io/roadmap/
 * Website:        http://cryply.io/
 * BitcoinTalk/RU: Comming soon
-* BitcoinTalk/EN: https://bitcointalk.org/index.php?topic=3352561
+* BitcoinTalk/EN: https://bitcointalk.org/index.php?topic=2634468.0
 * BitcoinTalk/DE: Comming soon
-* BitcoinTalk/ES: https://bitcointalk.org/index.php?topic=3019743
+* BitcoinTalk/ES: https://bitcointalk.org/index.php?topic=3019743.0
+* BitcoinTalk/ID: https://bitcointalk.org/index.php?topic=3151205.0
+* BitcoinTalk/CZ: https://bitcointalk.org/index.php?topic=3250704.0
 * Twitter:        https://twitter.com/freecryply
-* Telegram/EN:    http://t.me/freecryplyru
+* Telegram/EN:    http://t.me/freecryplyen
 * Telegram/RU:    http://t.me/freecryplyru
-* Telegram/ES:    http://t.me/freecryplyru
-* Telegram/DE:    http://t.me/freecryplyru
+* Telegram/ES:    http://t.me/freecryplyes
+* Telegram/DE:    http://t.me/freecryplyde
 
 
 Cryply Core integration/staging tree
