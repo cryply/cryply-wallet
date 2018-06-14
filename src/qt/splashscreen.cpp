@@ -23,7 +23,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     // set reference point, paddings
     int paddingRight            = 50;
     int paddingTop              = 180;
-    int titleVersionVSpace      = 17;
+    int titleVersionVSpace      = 27;
     int titleCopyrightVSpace    = 40;
 
     float fontFactor            = 1.0;
@@ -35,7 +35,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     QString copyrightTextBTC= QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
-    QString font            = "Arial";
+    QString font            = "Roboto";
 
     // load the bitmap for writing some text over it
     QPixmap newPixmap;
@@ -47,7 +47,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     }
 
     QPainter pixPaint(&newPixmap);
-    //pixPaint.setPen(QColor(100,100,100));
+    pixPaint.setPen(QColor(Qt::white));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 33*fontFactor));
@@ -112,7 +112,7 @@ static void InitMessage(SplashScreen *splash, const std::string &message)
         Qt::QueuedConnection,
         Q_ARG(QString, QString::fromStdString(message)),
         Q_ARG(int, Qt::AlignBottom|Qt::AlignHCenter),
-        Q_ARG(QColor, QColor(55,55,55)));
+        Q_ARG(QColor, QColor(Qt::white)));
 }
 
 static void ShowProgress(SplashScreen *splash, const std::string &title, int nProgress)
