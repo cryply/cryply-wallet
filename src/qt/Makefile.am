@@ -350,13 +350,14 @@ endif
 if TARGET_WINDOWS
   cryply_qt_SOURCES += $(BITCOIN_RC)
 endif
-cryply_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER) $(LIBBITCOIN_POWHASH)
+cryply_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
 cryply_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 cryply_qt_LDADD += $(SSL_LIBS) $(CRYPTO_LIBS) $(BDB_LIBS)
 cryply_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) \
+	$(LIBBITCOIN_POWHASH)
 cryply_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h

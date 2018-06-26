@@ -159,8 +159,7 @@ libbitcoin_powhash_a_SOURCES = \
   hash/yespower/sysendian.h \
   hash/yespower/insecure_memzero.h \
   hash/yespower/yespower-platform_c.h \
-  hash/yespower/yespower-opt.c \
-  hash/yespower/yespower-ref.c
+  hash/yespower/yespower-opt.c 
 
 if GLIBC_BACK_COMPAT
 libbitcoin_common_a_SOURCES += compat/glibc_compat.cpp
@@ -237,9 +236,3 @@ EXTRA_DIST = leveldb Makefile.include
 clean-local:
 	-$(MAKE) -C leveldb clean
 	rm -f leveldb/*/*.gcno leveldb/helpers/memenv/*.gcno
-
-if TARGET_DARWIN
-hash/yespower/yespower.o: CFLAGS += -O3 -msse4.1 -funroll-loops -fomit-frame-pointer
-else
-hash/yespower/yespower.o: CFLAGS += -msse4.1 -fPIC
-endif
