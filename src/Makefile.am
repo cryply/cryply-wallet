@@ -5,7 +5,8 @@ AM_CPPFLAGS += -I$(builddir)
 noinst_LIBRARIES = \
   libbitcoin_server.a \
   libbitcoin_common.a \
-  libbitcoin_cli.a
+  libbitcoin_cli.a \
+  libbitcoin_powhash.a
 if ENABLE_WALLET
 noinst_LIBRARIES += libbitcoin_wallet.a
 endif
@@ -71,7 +72,7 @@ BITCOIN_CORE_H = \
   version.h \
   walletdb.h \
   wallet.h \
-  yescryptcache.h
+  yespowercache.h
 
 JSON_H = \
   json/json_spirit.h \
@@ -133,18 +134,8 @@ libbitcoin_common_a_SOURCES = \
   chainparams.cpp \
   txdb.cpp \
   leveldbwrapper.cpp \
-  yescryptcache.cpp \
   core.cpp \
   hash.cpp \
-  hash/yescrypt/yescrypt.h \
-  hash/yescrypt/yescrypt.c \
-  hash/yescrypt/sha256.h \
-  hash/yescrypt/sha256_c.h \
-  hash/yescrypt/yescrypt-best_c.h \
-  hash/yescrypt/sysendian.h \
-  hash/yescrypt/yescrypt-platform_c.h \
-  hash/yescrypt/yescrypt-opt_c.h \
-  hash/yescrypt/yescrypt-simd_c.h \
   key.cpp \
   netbase.cpp \
   protocol.cpp \
@@ -154,6 +145,22 @@ libbitcoin_common_a_SOURCES = \
   util.cpp \
   version.cpp \
   $(BITCOIN_CORE_H)
+
+libbitcoin_powhash_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbitcoin_powhash_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_powhash_a_SOURCES = \
+  leveldbwrapper.h \
+  leveldbwrapper.cpp \
+  yespowercache.cpp \
+  hash/yespower/yespower.h \
+  hash/yespower/yespower.c \
+  hash/yespower/sha256.h \
+  hash/yespower/sha256.c \
+  hash/yespower/sysendian.h \
+  hash/yespower/insecure_memzero.h \
+  hash/yespower/yespower-platform_c.h \
+  hash/yespower/yespower-opt.c \
+  hash/yespower/yespower-ref.c
 
 if GLIBC_BACK_COMPAT
 libbitcoin_common_a_SOURCES += compat/glibc_compat.cpp
@@ -174,6 +181,7 @@ cryplyd_LDADD = \
   libbitcoin_server.a \
   libbitcoin_cli.a \
   libbitcoin_common.a \
+  libbitcoin_powhash.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
@@ -195,6 +203,7 @@ cryplyd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS)
 cryply_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
+  libbitcoin_powhash.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
   $(BOOST_LIBS)
@@ -230,7 +239,7 @@ clean-local:
 	rm -f leveldb/*/*.gcno leveldb/helpers/memenv/*.gcno
 
 if TARGET_DARWIN
-hash/yescrypt/yescrypt.o: CFLAGS += -O3 -msse4.1 -funroll-loops -fomit-frame-pointer
+hash/yespower/yespower.o: CFLAGS += -O3 -msse4.1 -funroll-loops -fomit-frame-pointer
 else
-hash/yescrypt/yescrypt.o: CFLAGS += -msse4.1 -fPIC
+hash/yespower/yespower.o: CFLAGS += -msse4.1 -fPIC
 endif

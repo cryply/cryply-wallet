@@ -1,4 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2017-2018 Cryply developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,7 +26,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     int paddingTop              = 180;
     int titleVersionVSpace      = 27;
     int titleCopyrightVSpace    = 40;
-
+    
     float fontFactor            = 1.0;
 
     // define text to place
@@ -53,7 +54,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     pixPaint.setFont(QFont(font, 33*fontFactor));
     QFontMetrics fm = pixPaint.fontMetrics();
     int titleTextWidth  = fm.width(titleText);
-    if(titleTextWidth > 160) {
+if(titleTextWidth > 160) {
         // strange font rendering, Arial probably not found
         fontFactor = 0.75;
     }

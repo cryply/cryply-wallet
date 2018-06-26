@@ -350,7 +350,7 @@ endif
 if TARGET_WINDOWS
   cryply_qt_SOURCES += $(BITCOIN_RC)
 endif
-cryply_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
+cryply_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER) $(LIBBITCOIN_POWHASH)
 if ENABLE_WALLET
 cryply_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif

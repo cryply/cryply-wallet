@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin developers
+// Copyright (c) 2017-2018 Cryply developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,7 +20,7 @@
 #include "sync.h"
 #include "txmempool.h"
 #include "uint256.h"
-#include "yescryptcache.h"
+#include "yespowercache.h"
 
 #include <algorithm>
 #include <exception>
@@ -1067,7 +1068,7 @@ extern CCoinsViewCache *pcoinsTip;
 /** Global variable that points to the active block tree (protected by cs_main) */
 extern CBlockTreeDB *pblocktree;
 
-extern CBlockYescryptCache *yescryptCache;
+extern CBlockYespowerCache *yespowerCache;
 
 struct CBlockTemplate
 {

@@ -1,5 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin developers
+// Copyright (c) 2017-2018 Cryply developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +21,7 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-    0x55C89AC3,
+    0x55C89AC3, 0x0E4E9AC3, 0x264E9AC3,
 };
 
 class CMainParams : public CChainParams {
@@ -67,6 +68,8 @@ public:
 
 //        vFixedSeeds.clear();
         vSeeds.clear();
+        vSeeds.push_back(CDNSSeedData("cryply.luckypool.org", "cryply.luckypool.org"));
+        vSeeds.push_back(CDNSSeedData("pool.cryply.io", "pool.cryply.io"));
         vSeeds.push_back(CDNSSeedData("cryply1.club", "cryply1.club"));
         vSeeds.push_back(CDNSSeedData("cryply2.club", "cryply2.club"));
         vSeeds.push_back(CDNSSeedData("cryply3.club", "cryply3.club"));
@@ -75,7 +78,6 @@ public:
         vSeeds.push_back(CDNSSeedData("cryply6.club", "cryply6.club"));
         vSeeds.push_back(CDNSSeedData("cryply7.club", "cryply7.club"));
         vSeeds.push_back(CDNSSeedData("cryply8.club", "cryply8.club"));
-        vSeeds.push_back(CDNSSeedData("luckypool.org", "cryply.luckypool.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
@@ -131,10 +133,11 @@ public:
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1518727013;
-        genesis.nNonce = 238202;
+        genesis.nTime = 1519253905;
+        genesis.nNonce = 116863;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x7c308addb16ae76f1ff0b301c9540eb23b5a04c94c933729f0eb3b9323f609fe"));
+        // printf("hashGenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0x0000012e8bd27f12a29f3433086c04e54d9348bc8c405a7084849a1d053134ef"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
