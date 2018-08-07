@@ -37,7 +37,7 @@ Cryply Core integration/staging tree
 * Copyright (c) 2017-     Cryply Core Developers
 * Copyright (c) 2009-2017 Bitcoin Core Developers
 * Copyright (c) 2013-2017 Dash Developers (DarkGravityWave3)
-* Copyright (c) 2014-2017 Alexander Peslyak (Yescrypt Original)
+* Copyright (c) 2014-2018 Alexander Peslyak (YesPoWer Original)
 
 
 
